@@ -1,32 +1,27 @@
 .venv/
-*__pycache__
-*.pyc
-.DS_Store
-poetry.lock
-# *.pkl
-# Python Virtual Environments
-.venv/
 env/
 venv/
 
-# Python Cache
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.pyd
 
-# OS Generated Files
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Raw Data (Too large for Git)
-# data/*.csv
-# data/*.json
+# Poetry lock file
+poetry.lock
 
-# Machine Learning Models (If NOT using Git LFS)
+# Machine learning artifacts
 *.pkl
 *.h5
 *.model
 
-# Secrets and Environment Variables
+# Secrets and environment variables
 .env
+
+# Python tooling caches
+.mypy_cache/
+.pytest_cache/
